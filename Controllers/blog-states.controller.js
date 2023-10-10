@@ -1,10 +1,12 @@
 const { default: axios } = require("axios");
-const { memoize } = require("lodash");
-const filter = require("lodash.filter");
-const includes = require("lodash.includes");
-const mapValues = require("lodash.mapvalues");
-const maxBy = require("lodash.maxby");
-const uniqBy = require("lodash.uniqby");
+const {
+  memoize,
+  maxBy,
+  filter,
+  uniqBy,
+  mapValues,
+  includes,
+} = require("lodash");
 
 const memoizedFun = async () => {
   return axios

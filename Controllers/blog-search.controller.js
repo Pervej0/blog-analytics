@@ -1,7 +1,5 @@
 const { default: axios } = require("axios");
-const { toLower, memoize } = require("lodash");
-const filter = require("lodash.filter");
-const includes = require("lodash.includes");
+const { toLower, memoize, filter, includes } = require("lodash");
 
 // const memoizedBlog = memoize(() => {});
 
