@@ -1,0 +1,34 @@
+
+const users = [
+  { 'user': 'barney',  'age': 36, 'active': true },
+  { 'user': 'fred',    'age': 40, 'active': false },
+  { 'user': 'pebbles', 'age': 40,  'active': true }
+  { 'user': 'Shiny pebbles', 'age': 4,  'active': false }
+];
+
+const fruits = ["Mango", "Orange", "Lime", "Banana"];
+
+1)
+find - To find an specific array of element by condition
+ex: lessThan40 = find(users, function(o) { return o.age < 40; })
+
+2)
+filter - to find array of elements by condition
+ex: activeFalse = filter(users, function(o) { return !o.active; });
+
+3) 
+includes - return those elements whose match with includes parameter.
+ex: const uniqueData = includes(fruits, "Mango");
+ex: const pabblesUser = filter(users, (item)=> includes(item.user, "pebbles"))
+
+4) 
+maxBy - return elements which has highest, longest, largest value by condition
+ex: const longestTitle = maxBy(users, (item) => item.user.length);
+
+5) 
+uniqBy - return those elements which are unique.
+ex: const uniqueByAge = uniqBy(users, "age")
+
+6) 
+mapValues - used mostly to return array of elements value.
+ex: const usersName = mapValues(users, (item)=> item.user)
